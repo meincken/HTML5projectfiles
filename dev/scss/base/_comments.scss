@@ -1,0 +1,111 @@
+/*--------------------------------------------------------------
+14.0 Comments
+--------------------------------------------------------------*/
+
+#comments {
+  clear: both;
+  padding: 2em 0 0.5em;
+}
+
+.comments-title {
+  @include font-size(2);
+  margin-bottom: 1.5em;
+}
+
+.comment-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  .children {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  li:before {
+    display: none;
+  }
+}
+
+.comment-body {
+  margin-left: 65px;
+}
+
+.comment-author {
+  @include font-size(1.6);
+  margin-bottom: 0.4em;
+  position: relative;
+  z-index: 2;
+  .avatar {
+    height: 50px;
+    left: -65px;
+    position: absolute;
+    width: 50px;
+  }
+  .says {
+    display: none;
+  }
+}
+
+.comment-meta {
+  margin-bottom: 1.5em;
+}
+
+.comment-metadata {
+  color: $gray1;
+  @include font-size(1);
+  font-weight: 800;
+  letter-spacing: 0.1818em;
+  text-transform: uppercase;
+  a {
+    color: $gray1;
+    &.comment-edit-link {
+      color: $black2;
+      margin-left: 1em;
+    }
+  }
+}
+
+.comment-body {
+  color: $black3;
+  @include font-size(1.4);
+  margin-bottom: 4em;
+}
+
+.comment-reply-link {
+  font-weight: 800;
+  position: relative;
+  .icon {
+    color: $black2;
+    left: -2em;
+    height: 1em;
+    position: absolute;
+    top: 0;
+    width: 1em;
+  }
+}
+
+.children .comment-author .avatar {
+  height: 30px;
+  left: -45px;
+  width: 30px;
+}
+
+.bypostauthor > .comment-body > .comment-meta > .comment-author .avatar {
+  border: 1px solid $black3;
+  padding: 2px;
+}
+
+.no-comments,
+.comment-awaiting-moderation {
+  color: $gray1;
+  @include font-size(1.4);
+  font-style: italic;
+}
+
+.comments-pagination {
+  margin: 2em 0 3em;
+}
+
+.form-submit {
+  text-align: right;
+}

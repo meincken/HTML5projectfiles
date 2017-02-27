@@ -1,0 +1,37 @@
+/*--------------------------------------------------------------
+13.5 Pages
+--------------------------------------------------------------*/
+
+.page-header {
+  padding-bottom: 2em;
+}
+
+.page .entry-header .edit-link {
+  @include font-size(1.4);
+}
+
+.search .page .entry-header .edit-link {
+  @include font-size(1.1);
+}
+
+.page-links {
+  clear: both;
+  margin: 0 0 1.5em;
+}
+
+.page:not(.home) #content {
+  padding-bottom: 1.5em;
+}
+
+/* 404 page */
+
+.error404 .page-content {
+  padding-bottom: 4em;
+  .search-form {
+    margin-bottom: 3em;
+  }
+}
+
+.search .page-content .search-form {
+  margin-bottom: 3em;
+}

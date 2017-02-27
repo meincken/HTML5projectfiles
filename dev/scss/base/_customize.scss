@@ -1,0 +1,26 @@
+.google-maps {
+  position: relative;
+  padding-bottom: 60%;
+  height: 0;
+  overflow: hidden;
+  iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100% !important;
+    height: 100% !important;
+  }
+}
+@media screen and (min-width: 768px) {
+  .contact {
+    display: flex;
+
+    > div {
+      width: 50%;
+      margin: 0 10px 0 0;
+      + div {
+        margin: 0 0 0 10px;
+      }
+    }
+  }
+}
